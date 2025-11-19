@@ -11,7 +11,7 @@ export class EmprendedorService {
 
   constructor(private http: HttpClient) { }
 
-  getSponsors(): Observable<EmprendedorDetail[]> {
+  getEmprendedores(): Observable<EmprendedorDetail[]> {
     return this.http.get<EmprendedorDetail[]>(this.apiUrl);
   }
 }
